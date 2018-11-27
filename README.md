@@ -1,3 +1,11 @@
+
+Plugin Used:
+1.Vuex
+2.Vue-router
+4.Axios
+
+ScreenShots of the project is in screenshots folder
+
 # blogproject
 
 > A Vue.js project
