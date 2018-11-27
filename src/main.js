@@ -6,6 +6,7 @@ import Axios from 'axios'
 import Vueaxios from 'vue-axios'
 import router from './router'
 import { store } from './store/store'
+import '../node_modules/bulma/css/bulma.css'
 
 
 Vue.config.productionTip = false

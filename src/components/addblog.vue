@@ -1,13 +1,13 @@
 <template>
   <div id='add-blog'>
     <form v-if="!submitted">
-      <h2> Add a new Blog Post</h2>
-      <label> Blog Title: </label>
-      <input type='text' v-model.lazy='blog.title' required/>
-      <label> Blog content </label>
-      <textarea v-model.lazy='blog.content'></textarea>
+      <h1 class="content is-large"> Add a new Blog Post</h1>
+      <label class="content is-medium"> Blog Title: </label>
+      <input class = "field control input is-danger input is-medium" type='text' v-model.lazy='blog.title' required/>
+      <label class="content is-medium"> Blog content </label>
+      <textarea class="field control textarea is-success" v-model.lazy='blog.content'></textarea>
       <div id = 'checkboxes'>
-        <label>Blog Categories : </label>
+        <label class="content is-medium">Blog Categories : </label>
         <label>Personal</label>
         <input type='checkbox' value='personal' v-model='blog.categories' />
         <label>Education</label>
@@ -15,24 +15,26 @@
         <label>Employement</label>
         <input type='checkbox' value='office' v-model='blog.categories'/>
       </div>
-      <label> Author </label>
-      <select v-model='blog.author'>
-        <option v-for='authors in authorlist'>{{authors}}</option>
-      </select>
+      <label class="content is-large"> Author </label>
+      <div class="field control select is-medium select is-rounded">
+             <select v-model='blog.author'>
+               <option v-for='authors in authorlist'>{{authors}}</option>
+             </select>
+      </div>
       <p>
-        <button v-on:click="postdata">Add to Blog </button>
+        <button class="button is-large is-fullwidth button is-info" v-on:click="postdata">Add to Blog </button>
       </p>
     </form>
     <div v-if="submitted">
-      <p> Thanks for adding your own Blog!</p>
+      <p class="content is-large"> Thanks for adding your own Blog!</p>
     </div>
     <div>
-    <button v-on:click=""><router-link to="/show">Show Blogs List</router-link></button>
+    <button class="button is-large is-fullwidth button is-success" v-on:click=""><router-link to="/show">Show Blogs List</router-link></button>
     </div>
 
 
-    <div id ='preview'>
-      <h3>preview</h3>
+    <div  id ='preview'>
+      <h1 class="content is-large">preview</h1>
       <p>Blog Title:{{blog.title}}</p>
       <p>Blog content:</p>
       <p> {{blog.content}} </p>
