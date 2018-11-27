@@ -1,10 +1,10 @@
 
-Plugin Used:
+# Plugin Used:
 1.Vuex
 2.Vue-router
-4.Axios
+3.Axios
 
-ScreenShots of the project is in screenshots folder
+# ScreenShots of the project is in screenshots folder
 
 # blogproject
 
