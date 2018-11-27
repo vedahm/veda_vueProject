@@ -1,6 +1,6 @@
 <template>
   <div id="show-blogs">
-    <h1>List All the Added Blogs </h1>
+    <h1>List of All the Added Blogs </h1>
     <button v:onclick=''><router-link to ='/'>Add New Blog</router-link></button>
     <div v-for="blog in blogs" class="single-blog">
       <h1>{{blog.title}}</h1>
